@@ -4,9 +4,13 @@ import {
     Text
 } from 'react-native';
 
-const AppStateles = () =>(
+const AppStateles = (props) =>(
     <View>
-        <Text>Hello World Stateles</Text>
+        <Text>Component Stateles</Text>
+        <Text>Name  : {props.nama}</Text>
+        <Text>Alamat : {props.alamat}</Text>
+        <Text>Telp : {props.telp}</Text>
+        <Text>Email : {props.email}</Text>
     </View>
 )
 export default AppStateles;
