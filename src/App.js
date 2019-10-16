@@ -20,7 +20,7 @@ class App extends React.Component{
                 <PropsRuang nama="Persegi Panjang" luas="Panjang x Lebar" keliling="2 x (panjang + lebar)" />
                 <PropsRuang nama="Segitiga" luas="(Alas x Tinggi)/2" keliling="Jumlah semua sisi" />
                 <PropsRuang nama="Lingkaran" luas="r x r x phi" keliling="2 x phi x r" />
-                <PropsRuang nama="Belah Ketupat" luas="1/2 x d1 x d2" keliling="4 x sisi" /> */}
+                <PropsRuang /> */}
                 <AppStatles nama="Randy" alamat="JKT" telp="021" email="andi@yahoo.com"/>
               
            </View>
