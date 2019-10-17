@@ -1,56 +1,28 @@
-import React ,{ Component} from 'react';
-import{StyleSheet,View,Image} from 'react-native';
-
+{import React ,{ Component} from 'react';
+import{StyleSheet,View,Image,Text,ImageBackground} from 'react-native';}
+import {style} from './styleProfile' // model .css
 
 export default class ProfileColor extends Component {
     render(){
         return(
             <View style={style.container}>
+                <ImageBackground style={style.bgImage} source={require('../assets/background.png')} >
                 <View style = {style.cardContainer}>
-                    <View style = {StyleSheet.cardImageContainer}>
-                        <Image style={StyleSheet.cardImage} source={require('../assets/user.png')} />
+                    <View style = {style.cardImageContainer}>
+                        <Image style={style.cardImage} source={require('../assets/user2.png')} />
                     </View>
+                    <Text style={style.cardName}>John Doe</Text>
+                    <View style ={style.cardOccupationContainer}>
+                        <Text style ={style.cardOccupation}>React Native Developer</Text>
+                    </View>
+                    <View>
+                        <Text style ={style.cardDescription}>john is a really great Javascript Developer. 
+                        He loves using JS to build React Native applicatons for IOS and Android</Text>
+                    </View>
+                    
                 </View>  
+                </ImageBackground>
             </View>
         );
     }
 }
-
-const profileCardColor = 'dodgerblue';
-
-const style = StyleSheet.create({
-    container:{
-        flex:1,
-        justifyContent: 'center',
-        alignItems:'center'
-    },
-    cardContainer: {
-        borderColor: 'black',
-        borderWidth:3,
-        borderStyle: 'solid',
-        borderRadius: 20,
-         backgroundColor: profileCardColor,
-        width: 300,
-        height: 400,
-        alignItems: 'center'
-       
-    },
-    cardImageContainer: {
-        alignItems: 'center',
-        backgroundColor: 'white',
-        borderWidth: 3,
-        borderColor: 'black',
-        width: 120,
-        height: 120,
-        borderRadius: 60,
-        marginTop :'30',
-        paddingTop:'15'
-        
-    },
-    cardImage: {
-        width: 80,
-        height: 80,
-         alignItems: 'center'
-    }
-
-});
